@@ -10,7 +10,7 @@ def test_login_page_is_displayed(page: Page):
 
 
 def test_successful_login(page: Page):
-    page.goto("https://www.saucedemo.com/")
+    page.goto("https://www.saucedemo.com/incorrect.html")
 
     page.locator('[data-test="username"]').fill("standard_user")
     page.locator('[data-test="password"]').fill("secret_sauce")
